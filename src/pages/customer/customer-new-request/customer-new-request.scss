@@ -1,0 +1,43 @@
+page-customer-new-request {
+  .profile-section {
+    background: color($colors, mooovme, base) !important;
+    .image {
+      .user-image {
+        border: 1px solid #ffffff !important;
+        border-radius: 50% !important;
+      }
+    }
+    .name {
+      margin-top: 15px;
+      color: #fff;
+      font-size: 1.2em;
+    }
+  }
+
+  .user-form {
+    margin-top: 16px;
+
+    .type {
+      margin-top: 32px;
+      padding: 0 16px 0 16px;
+    }
+
+    ion-list {
+      ion-list-header {
+        background-color: #f4f4f4;;
+      }
+    }
+  }
+  .nl-border{
+    margin: 10px 0 10px 0 ;
+    border:1px solid #aaaaaa;
+  }
+  .nl-source-address{
+    margin: 10px 0 10px 0 ;
+    color: #424242;
+    font-size: 1.5em;
+  }
+  .nl-background {
+    background: lightgrey;
+  }
+}

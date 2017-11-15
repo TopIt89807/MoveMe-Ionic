@@ -1,0 +1,48 @@
+<ion-header no-border>
+  <ion-navbar color="mooovme">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+  <ion-toolbar>
+    <ion-segment [(ngModel)]="jobType">
+      <ion-segment-button value="active">
+        Ongoing
+      </ion-segment-button>
+      <ion-segment-button value="completed">
+        Completed
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div [ngSwitch]="jobType">
+    <ion-list *ngSwitchCase="'active'">
+      <ion-item (click)="proposalDetail()" *ngFor="let job of allJobs | activeJobs">
+        <ion-thumbnail item-start>
+          <img src="assets/icon/favicon.png">
+        </ion-thumbnail>
+        <h2>{{ job.name }}</h2>
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'completed'">
+      <ion-item (click)="proposalDetail()" *ngFor="let job of allJobs | completedJobs">
+        <ion-thumbnail item-start>
+          <img src="assets/icon/favicon.png">
+        </ion-thumbnail>
+        <h2>{{ job.name }}</h2>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <ion-fab (click)="newRequirementPage()">
+    <button ion-fab>
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-fab>
+
+</ion-content>

@@ -1,0 +1,33 @@
+page-login {
+  .link-forgot-password {
+    margin: 16px;
+    color: color($colors, mooovme, base);
+  }
+
+  .link-sign-up {
+    margin: 16px;
+    color: color($colors, mooovme, base);
+  }
+
+  ion-content {
+    .scroll-content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  .top-banner {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: color($colors, mooovme, base);
+  }
+
+  .bottom-content {
+    flex: 1;
+    width: 100%;
+  }
+}

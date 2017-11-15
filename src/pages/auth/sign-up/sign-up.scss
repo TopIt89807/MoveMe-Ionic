@@ -1,0 +1,31 @@
+page-sign-up {
+  .link-log-in {
+    margin: 16px;
+    color: color($colors, mooovme, base);
+
+    .login-text {
+      font-size: 18px;
+    }
+  }
+
+  ion-content {
+    .scroll-content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+
+  .top-banner {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .bottom-content {
+    flex: 1;
+    width: 100%;
+  }
+}

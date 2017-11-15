@@ -1,0 +1,63 @@
+page-customer-request-details {
+  .list-section {
+    //margin-top: 15px;
+    ion-list {
+      margin-bottom: 10px;
+      ion-list-header {
+        font-size: 1.3em !important;
+        color: color($colors, mooovme, base) !important;
+        min-height: 5rem;
+        background-color: #f4f4f4;
+      }
+
+      ion-item {
+        color: color($colors, label, base);
+        ion-label {
+          span {
+            color: color($colors, label-value, base);
+          }
+        }
+      }
+    }
+    ion-list:nth-child(4) {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .profile-section {
+    padding-left: 48px !important;
+    padding-right: 48px !important;
+    background: color($colors, mooovme, base) !important;
+
+    .title {
+      height: 30px;
+      color: color($colors, light, base);
+      font-size: 1.7rem;
+    }
+
+    ion-item {
+      border-radius: 50px;
+      padding-left: 0;
+
+      ion-avatar {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        img {
+          width: 60px;
+          height: 60px;
+        }
+      }
+
+      ion-label {
+        margin-left: calc(50% - 60px);
+        .name {
+          color: color($colors, label, base)
+        }
+        .ratting {
+          color: color($colors, mooovme, base);
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}

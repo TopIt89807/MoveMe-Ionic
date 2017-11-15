@@ -1,0 +1,21 @@
+page-customer-payment {
+  h3 {
+    color: color($colors, mooovme, base);
+  }
+
+  ion-list {
+    ion-item {
+      color: color($colors, label-value, base) !important;
+
+      ion-label {
+
+      }
+      ion-input {
+
+      }
+    }
+    ion-item:nth-child(1) {
+      border-top: none !important;
+    }
+  }
+}

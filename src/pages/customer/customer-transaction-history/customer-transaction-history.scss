@@ -1,0 +1,33 @@
+page-customer-transaction-history {
+  ion-list {
+    ion-item {
+      ion-avatar {
+        img {
+
+        }
+      }
+
+      .text {
+        font-size: 1.6rem;
+        color: color($colors, label-value, base);
+      }
+
+      .ratting {
+        margin-top: 10px;
+        color: color($colors, label-value, base);
+        font-weight: 500;
+
+        .amount {
+          color: color($colors, mooovme, base);
+        }
+
+        .active {
+          color: green !important;
+        }
+        .close {
+          color: color($colors, label-value, base);
+        }
+      }
+    }
+  }
+}

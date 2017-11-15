@@ -1,0 +1,23 @@
+page-customer-settings {
+  .profile-section {
+    background: color($colors, mooovme, base) !important;
+    .image {
+      .user-image {
+        border: 1px solid #ffffff !important;
+        border-radius: 50% !important;
+      }
+    }
+    .name {
+      margin-top: 15px;
+      color: #fff;
+      font-size: 1.2em;
+    }
+  }
+  .list-section {
+    margin-top: 15px;
+    ion-list-header {
+      font-size: 1.3em !important;
+      color: color($colors, mooovme, base) !important;
+    }
+  }
+}

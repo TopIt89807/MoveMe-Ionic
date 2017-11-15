@@ -1,0 +1,61 @@
+<!--
+  Generated template for the CustomerSettingsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border>
+
+  <ion-navbar color="mooovme">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Settings</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="profile-section" text-center padding>
+    <div class="image">
+      <img class="user-image" src="assets/icon/favicon.png" width="30%"/>
+    </div>
+    <div class="name">
+      Mark Johnson
+    </div>
+  </div>
+  <div class="list-section">
+    <ion-list>
+      <ion-list-header>
+        Personal
+      </ion-list-header>
+
+      <button ion-item (click)="settingNevigateMe('profile')">
+        Profile
+      </button>
+      <button ion-item (click)="settingNevigateMe('changePassword')">
+        Change password
+      </button>
+      <button ion-item (click)="settingNevigateMe('otherSettings')">
+        Other Settings
+      </button>
+    </ion-list>
+
+    <ion-list>
+      <ion-list-header>
+        Other
+      </ion-list-header>
+
+      <button ion-item (click)="settingNevigateMe('privacyPolicy')">
+        Privacy Policy
+      </button>
+      <button ion-item (click)="settingNevigateMe('termsAndCondition')">
+        Terms of Use
+      </button>
+      <button ion-item (click)="settingNevigateMe('aboutUs')">
+        About us
+      </button>
+    </ion-list>
+  </div>
+</ion-content>

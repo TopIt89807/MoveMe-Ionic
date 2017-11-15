@@ -1,0 +1,75 @@
+<!--
+  Generated template for the CustomerRequestDetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border>
+
+  <ion-navbar color="mooovme">
+    <ion-title>Details</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+  <div class="profile-section" text-center padding>
+    <div class="image">
+      <img class="user-image" src="assets/icon/favicon.png" width="30%"/>
+    </div>
+    <button ion-button outline color="light" small round (click)="proposalList()">View Proposals</button>
+  </div>
+  <div class="list-section">
+    <ion-list>
+      <ion-list-header>
+        Personal Info
+      </ion-list-header>
+      <ion-item>Name: <span>Mark Johnson</span></ion-item>
+      <ion-item>Email: <span>John@gmail.com</span></ion-item>
+      <ion-item>Contact: <span>9662825456</span></ion-item>
+    </ion-list>
+    <ion-list text-wrap>
+      <ion-list-header>
+        Vehicle Info
+      </ion-list-header>
+      <ion-item>Tyre: <span>Mark Double decker</span></ion-item>
+      <ion-item>Other type: <span>Diesel</span></ion-item>
+      <ion-item>No of movers needed: <span>02</span></ion-item>
+      <ion-item>Description: <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</span></ion-item>
+    </ion-list>
+    <ion-list text-wrap>
+      <ion-list-header>
+        Source Address
+      </ion-list-header>
+      <ion-item>Address: <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</span></ion-item>
+      <ion-item>City: <span>Seward</span></ion-item>
+      <ion-item>State: <span>Alaska</span></ion-item>
+      <ion-item>Zip code: <span>99664</span></ion-item>
+    </ion-list>
+    <ion-list text-wrap>
+      <ion-list-header>
+        Destination Address
+      </ion-list-header>
+      <ion-item>Address: <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</span></ion-item>
+      <ion-item>City: <span>Seward</span></ion-item>
+      <ion-item>State: <span>Alaska</span></ion-item>
+      <ion-item>Zip code: <span>99664</span></ion-item>
+    </ion-list>
+  </div>
+
+  <div class="profile-section" text-center padding>
+    <div class="title">
+      This job is assigned to
+    </div>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/icon/favicon.png">
+      </ion-avatar>
+      <h2 class="name">James Furry</h2>
+      <p class="ratting">
+        Ratting: 5.0 <ion-icon name="star"></ion-icon>
+      </p>
+    </ion-item>
+  </div>
+</ion-content>

@@ -1,0 +1,49 @@
+<ion-header no-border>
+
+  <ion-navbar color="mooovme">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="profile-section" text-center padding>
+    <div class="image">
+      <img class="user-image" src="assets/icon/favicon.png" width="30%"/>
+    </div>
+    <div class="name">
+      Upload Image
+    </div>
+  </div>
+  <div class="user-form" padding>
+    <ion-item item-left>
+      <ion-icon name="star"></ion-icon>
+      <ion-input type="text" placeholder="Full Name"></ion-input>
+    </ion-item>
+    <ion-item item-left>
+      <ion-icon name="star"></ion-icon>
+      <ion-input type="text" placeholder="Email"></ion-input>
+    </ion-item>
+    <ion-item item-left>
+      <ion-icon name="star"></ion-icon>
+      <ion-input type="text" placeholder="Contact Number"></ion-input>
+    </ion-item>
+    <ion-item item-left>
+      <ion-icon name="star"></ion-icon>
+      <ion-textarea rows="3" placeholder="Address"></ion-textarea>
+    </ion-item>
+    <ion-item item-left>
+      <ion-icon name="star"></ion-icon>
+      <ion-input type="text" placeholder="Location (City/State)"></ion-input>
+    </ion-item>
+    <ion-item item-left>
+      <ion-icon name="star"></ion-icon>
+      <ion-input type="text" placeholder="Zip Code"></ion-input>
+    </ion-item>
+    <button ion-button block round save-btn (click)="saveProfile()">Save</button>
+  </div>
+</ion-content>

@@ -1,0 +1,25 @@
+page-customer-proposals {
+  ion-item {
+    ion-avatar {
+      img {
+
+      }
+    }
+    .name {
+      color: color($colors, label, base);
+      .ratting {
+        color: color($colors, label-value, base);
+
+        ion-icon {
+          color: color($colors, mooovme, base) !important;
+        }
+      }
+    }
+    .proposal {
+      color: color($colors, mooovme, base)
+    }
+    .btn-grp {
+
+    }
+  }
+}

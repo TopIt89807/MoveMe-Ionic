@@ -1,0 +1,30 @@
+<ion-content>
+  <div class="bottom-content">
+    <div class="top-banner">
+      <img src="assets/icon/favicon.png" width="60%"/>
+    </div>
+
+    <div padding>
+      <ion-item item-left>
+        <ion-icon name="star"></ion-icon>
+        <ion-input type="text" placeholder="Email"></ion-input>
+      </ion-item>
+
+      <ion-item item-left>
+        <ion-icon name="star"></ion-icon>
+        <ion-input type="password" placeholder="Password"></ion-input>
+      </ion-item>
+
+      <div text-right class="link-forgot-password" (click)="navigate('forgotPassword')">
+        Forgot Password?
+      </div>
+
+      <button ion-button block round (click)="action('login')">Login</button>
+
+      <div text-center class="link-sign-up" (click)="navigate('signUp')">
+        Sign Up
+      </div>
+    </div>
+
+  </div>
+</ion-content>

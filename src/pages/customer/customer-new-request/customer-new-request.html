@@ -1,0 +1,111 @@
+<ion-header no-border>
+
+  <ion-navbar color="mooovme">
+    <ion-buttons start>
+      <button ion-button icon-start (click)="dismiss()">
+        <ion-icon name="ios-arrow-round-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Requirement</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <div class="profile-section" text-center padding>
+    <div class="image">
+      <img class="user-image" src="assets/icon/favicon.png" width="30%"/>
+    </div>
+    <div class="name">
+      Upload Image
+    </div>
+  </div>
+
+  <div class="user-form">
+
+    <ion-item margin-bottom>
+      <ion-label>Type of Vehicle</ion-label>
+      <ion-select >
+        <ion-option value="car">Car</ion-option>
+        <ion-option value="truck">Truck</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-list class="type" radio-group [(ngModel)]="truckType">
+      <ion-item >
+        <ion-label>Regular flatbed Truck</ion-label>
+        <ion-radio  value="regular_flatbed_truck"></ion-radio>
+      </ion-item>
+      <ion-item >
+        <ion-label>10' Truck</ion-label>
+        <ion-radio value="10_truck"></ion-radio>
+      </ion-item>
+    </ion-list>
+
+    <ion-item margin-bottom>
+      <ion-input type="text" placeholder="Other Vehicle type"></ion-input>
+    </ion-item>
+
+    <ion-item margin-bottom>
+      <ion-input type="text" placeholder="Number of Movers needed"></ion-input>
+    </ion-item>
+
+    <ion-item margin-bottom>
+      <ion-input type="text" placeholder="Email Contact"></ion-input>
+    </ion-item>
+
+    <ion-item margin-bottom>
+      <ion-input type="text" placeholder="Contact Number"></ion-input>
+    </ion-item>
+
+    <ion-list margin-bottom>
+      <ion-list-header>
+        Source Address: <ion-icon name="navigate" item-right></ion-icon>
+      </ion-list-header>
+      <ion-item>
+        <ion-textarea type="text" placeholder="Address"></ion-textarea>
+      </ion-item>
+    </ion-list>
+
+    <ion-item margin-bottom>
+      <ion-input type="text" placeholder="City"></ion-input>
+    </ion-item>
+
+    <ion-item margin-bottom>
+      <ion-input type="text" placeholder="State"></ion-input>
+    </ion-item>
+
+    <ion-item margin-bottom>
+      <ion-input type="text" placeholder="Zip code"></ion-input>
+    </ion-item>
+
+    <ion-list margin-bottom>
+      <ion-list-header>
+        Destination Address: <ion-icon name="navigate" item-right></ion-icon>
+      </ion-list-header>
+      <ion-item>
+        <ion-textarea type="text" placeholder="Address"></ion-textarea>
+      </ion-item>
+    </ion-list>
+
+    <ion-item margin-bottom>
+      <ion-input type="text" placeholder="City"></ion-input>
+    </ion-item>
+
+    <ion-item margin-bottom>
+      <ion-input type="text" placeholder="State"></ion-input>
+    </ion-item>
+
+    <ion-item margin-bottom>
+      <ion-input type="text" placeholder="Zip code"></ion-input>
+    </ion-item>
+
+    <ion-item margin-bottom>
+      <ion-textarea type="text" placeholder="Description of move"></ion-textarea>
+    </ion-item>
+
+    <button ion-button block round save-btn (click)="dismiss()">Submit</button>
+  </div>
+</ion-content>

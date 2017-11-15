@@ -1,0 +1,50 @@
+<ion-header no-border>
+
+  <ion-navbar color="mooovme">
+    <ion-buttons start>
+      <button ion-button icon-start (click)="dismiss()">
+        <ion-icon name="ios-arrow-round-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Payment</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <h3 text-center>Total Amount: $100</h3>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Card Name</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Card Number</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Expire Month</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Expire Year</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>CVV</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button block round (click)="action('submitPayment')">Submit</button>
+
+</ion-content>

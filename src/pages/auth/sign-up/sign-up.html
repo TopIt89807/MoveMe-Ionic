@@ -1,0 +1,40 @@
+<ion-header no-border>
+
+  <ion-navbar color="mooovme">
+    <ion-title>SignUp</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <div class="bottom-content">
+
+    <div class="top-banner">
+      <img src="assets/icon/favicon.png" width="60%"/>
+    </div>
+
+    <div padding>
+      <ion-item item-left>
+        <ion-icon name="star"></ion-icon>
+        <ion-input type="text" placeholder="Email"></ion-input>
+      </ion-item>
+
+      <ion-item item-left>
+        <ion-icon name="star"></ion-icon>
+        <ion-input type="password" placeholder="Password"></ion-input>
+      </ion-item>
+
+      <ion-item item-left>
+        <ion-icon name="star"></ion-icon>
+        <ion-input type="password" placeholder="Confirm Password"></ion-input>
+      </ion-item>
+
+      <button ion-button block round (click)="action('signUp')">Sign Up</button>
+
+      <div text-center class="link-log-in" (click)="navigate('login')">
+        Already have an account? <span class="login-text">Login</span>
+      </div>
+    </div>
+
+  </div>
+</ion-content>
